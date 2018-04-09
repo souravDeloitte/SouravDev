@@ -1,0 +1,16 @@
+<aura:component >
+    <aura:attribute name="item" type="Product__c"/>
+    
+    <p>Name:
+        <ui:outputText value="{!v.Product__c.Name}"/>
+    </p>
+    <p>Price:
+        <ui:outputCurrency value="{!v.Product__c.Price__c}"/>
+    </p>
+    <p>Quantity:
+        <ui:inputNumber value="{!v.Quantity__c}"/>
+    </p>
+    <p>Packed?:
+        <ui:outputText value="{!v.Quantity__c*Price__c}"/>
+    </p>
+</aura:component>

@@ -1,0 +1,5 @@
+<aura:component Controller="RetrieveAccountName" implements="lightning:actionOverride,force:hasSObjectName,force:hasRecordId" access="global">
+    <aura:attribute name="retrievedAcc" type="Account"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <lightning:button label="Redirect" title="Redirect" aura:id="Save" onclick="{!c.saveChanges}"/>
+</aura:component>
